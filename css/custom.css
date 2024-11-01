@@ -1,0 +1,56 @@
+/**
+ * Package: wp-youtube-playlist-widget
+ * Author : Srikanth Lavudia
+ * Description: This is the custom CSS for the plugin.
+*/
+.youtube-playlist{
+	display: inline-block;
+    margin:0px;
+    width: 100%;
+}
+.youtube-playlist li{
+	height: auto;
+    list-style: outside none none;
+    overflow: hidden;
+    padding: 0 !important;
+    position: relative !important;
+    width: auto;
+	margin-bottom: 15px;
+}
+.youtube-playlist.horizontal li{
+	float: left;
+    margin-right: 20px;
+	width: 40%;
+}
+.youtube-playlist li span{
+    font-size: 15px;
+    font-weight: bold;
+}
+.play{
+	background: url("../images/play128.png") no-repeat scroll 0 0;
+    box-shadow: none !important;
+    display: block;
+    height: 48px;
+    left: 37%;
+    position: absolute;
+    text-indent: -99999px;
+    top: 32%;
+    width: 64px;
+    /*z-index: 999999;*/
+}
+.youtube-playlist.horizontal .play{ top: 25%;}
+.play:hover{opacity:0.5;}
+
+/**
+ * modal dialog styles
+*/
+
+.ui-dialog{
+	z-index: 9999999 !important;
+}
+.ui-widget-overlay{
+	background: #000 !important;
+}
+.ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text{padding: 0px !important;outline: none;}
+.ui-widget-header{background: #3e3e3e;}
+.ui-dialog-titlebar{color:#00a0d2; font-size:15px; font-weight:normal;}
